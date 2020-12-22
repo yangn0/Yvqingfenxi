@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+
+<html lang="zh" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>智能舆情分析与商品评价系统</title>
+    <style>
+        * {
+            margin: 0 auto;
+        }
+
+        form, div {
+            width: 600px;
+        }
+
+        h1 {
+            width: 600px;
+        }
+    </style>
+    <link href="{{url_for('static',filename='pizza.css')}}" media="screen, projector, print" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <form action="{{ url_for('index') }}" method="post">
+
+
+        <input type="radio" checked="checked" checked="checked" name="web" value="male" />
+        网易
+        <input type="radio" name="web" value="male" />
+        凤凰
+        <input type="radio" name="web" value="male" />
+        新浪
+        <input type="radio" name="web" value="male" />
+        京东
+        <input type="radio" name="web" value="male" />
+        淘宝
+
+        <br />
+        url:
+        <input name="url" value="{{value}}"></input>
+        <input type="submit" type="submit">
+    </form>
+    <div style="width:600px;height:500px;overflow-y: auto;">
+        {% for message in messages %}
+        <p>{{ message }}</p>
+        {% endfor %}
+    </div>
+
+    <div class="row">
+        <div class="large-4 small-4 columns">
+            <ul data-pie-id="pie">
+                <li data-value="{{num1}}">积极评论 ({{num1}})</li>
+                <li data-value="{{num2}}">消极评论 ({{num2}})</li>
+
+            </ul>
+        </div>
+        <div class="large-8 small-8 columns">
+            <div id="pie"></div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="large-4 small-4 columns">
+            <ul data-bar-id="bar">
+                <li data-value="{{num1}}">积极评论 ({{num1}})</li>
+                <li data-value="{{num2}}">消极评论 ({{num2}})</li>
+            </ul>
+        </div>
+        <div class="large-8 small-8 columns">
+            <div id="bar" style="height: 450px;"></div>
+        </div>
+    </div>
+
+    <h1 style="color:red;">{{result}}</h1>
+
+
+    <br />
+
+    <div style="width:600px;height:300px;overflow-y: auto;">
+        记录：
+        {% for recored in recoreds %}
+        <p>{{ recored }}</p>
+        {% endfor %}
+    </div>
+
+
+</body>
+<script src="{{url_for('static',filename='jquery-1.11.0.min.js')}}" type="text/javascript"></script>
+<script src="{{url_for('static',filename='dependencies.js')}}"></script>
+<script src="{{url_for('static',filename='pizza.js')}}"></script>
+<script>
+$(window).load(function() {
+  Pizza.init();
+  $(document).foundation();
+});
+</script>
+</html>

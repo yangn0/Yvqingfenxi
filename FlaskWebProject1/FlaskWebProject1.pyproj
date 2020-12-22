@@ -1,0 +1,197 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>85f44f6a-a317-49f4-b60b-343684b65d41</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{789894c7-04a9-4a11-a6b5-3f4435165112};{1b580a1a-fdb3-4b32-83e1-6407eb2722e6};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>app.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <LaunchProvider>Web launcher</LaunchProvider>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+    <Name>FlaskWebProject1</Name>
+    <RootNamespace>FlaskWebProject1</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="spider_163.py" />
+    <Compile Include="app.py" />
+    <Compile Include="demoTest.py" />
+    <Compile Include="NaiveBayes.py" />
+    <Compile Include="spider_jd.py" />
+    <Compile Include="spider_qq.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="spider_sina.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include=".idea\misc.xml" />
+    <Content Include=".idea\modules.xml" />
+    <Content Include=".idea\workspace.xml" />
+    <Content Include=".idea\计算机设计大赛.iml" />
+    <Content Include="Lib\tcl8.6\init.tcl" />
+    <Content Include="negative.txt" />
+    <Content Include="positive.txt" />
+    <Content Include="pyvenv.cfg" />
+    <Content Include="requirements.txt" />
+    <Content Include="Scripts\activate" />
+    <Content Include="Scripts\activate.bat" />
+    <Content Include="Scripts\Activate.ps1" />
+    <Content Include="Scripts\api-ms-win-core-console-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-core-datetime-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-core-debug-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-core-errorhandling-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-core-file-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-core-file-l1-2-0.dll" />
+    <Content Include="Scripts\api-ms-win-core-file-l2-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-core-handle-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-core-heap-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-core-interlocked-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-core-libraryloader-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-core-localization-l1-2-0.dll" />
+    <Content Include="Scripts\api-ms-win-core-memory-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-core-namedpipe-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-core-processenvironment-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-core-processthreads-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-core-processthreads-l1-1-1.dll" />
+    <Content Include="Scripts\api-ms-win-core-profile-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-core-rtlsupport-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-core-string-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-core-synch-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-core-synch-l1-2-0.dll" />
+    <Content Include="Scripts\api-ms-win-core-sysinfo-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-core-timezone-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-core-util-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-crt-conio-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-crt-convert-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-crt-environment-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-crt-filesystem-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-crt-heap-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-crt-locale-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-crt-math-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-crt-multibyte-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-crt-private-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-crt-process-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-crt-runtime-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-crt-stdio-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-crt-string-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-crt-time-l1-1-0.dll" />
+    <Content Include="Scripts\api-ms-win-crt-utility-l1-1-0.dll" />
+    <Content Include="Scripts\concrt140.dll" />
+    <Content Include="Scripts\deactivate.bat" />
+    <Content Include="Scripts\msvcp140.dll" />
+    <Content Include="Scripts\pyexpat.pyd" />
+    <Content Include="Scripts\python.exe" />
+    <Content Include="Scripts\python3.dll" />
+    <Content Include="Scripts\python36.dll" />
+    <Content Include="Scripts\pythonw.exe" />
+    <Content Include="Scripts\select.pyd" />
+    <Content Include="Scripts\sqlite3.dll" />
+    <Content Include="Scripts\tcl86t.dll" />
+    <Content Include="Scripts\tk86t.dll" />
+    <Content Include="Scripts\ucrtbase.dll" />
+    <Content Include="Scripts\unicodedata.pyd" />
+    <Content Include="Scripts\vccorlib140.dll" />
+    <Content Include="Scripts\vcomp140.dll" />
+    <Content Include="Scripts\vcruntime140.dll" />
+    <Content Include="Scripts\winsound.pyd" />
+    <Content Include="Scripts\xlwings32-0.11.8.dll" />
+    <Content Include="Scripts\xlwings64-0.11.8.dll" />
+    <Content Include="Scripts\_asyncio.pyd" />
+    <Content Include="Scripts\_bz2.pyd" />
+    <Content Include="Scripts\_ctypes.pyd" />
+    <Content Include="Scripts\_ctypes_test.pyd" />
+    <Content Include="Scripts\_decimal.pyd" />
+    <Content Include="Scripts\_distutils_findvs.pyd" />
+    <Content Include="Scripts\_elementtree.pyd" />
+    <Content Include="Scripts\_hashlib.pyd" />
+    <Content Include="Scripts\_lzma.pyd" />
+    <Content Include="Scripts\_msi.pyd" />
+    <Content Include="Scripts\_multiprocessing.pyd" />
+    <Content Include="Scripts\_overlapped.pyd" />
+    <Content Include="Scripts\_socket.pyd" />
+    <Content Include="Scripts\_sqlite3.pyd" />
+    <Content Include="Scripts\_ssl.pyd" />
+    <Content Include="Scripts\_testbuffer.pyd" />
+    <Content Include="Scripts\_testcapi.pyd" />
+    <Content Include="Scripts\_testconsole.pyd" />
+    <Content Include="Scripts\_testimportmultiple.pyd" />
+    <Content Include="Scripts\_testmultiphase.pyd" />
+    <Content Include="Scripts\_tkinter.pyd" />
+    <Content Include="templates\WebPage1.html" />
+    <Content Include="templates\WebPage2.html" />
+    <Content Include="trainresult\p1" />
+    <Content Include="trainresult\p2" />
+    <Content Include="trainresult\vocablist" />
+    <Content Include="__pycache__\demoTest.cpython-36.pyc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include=".idea\" />
+    <Folder Include="Include\" />
+    <Folder Include="Lib\" />
+    <Folder Include="Lib\site-packages\" />
+    <Folder Include="Lib\tcl8.6\" />
+    <Folder Include="main\" />
+    <Folder Include="static\" />
+    <Folder Include="templates\" />
+    <Folder Include="obj\" />
+    <Folder Include="obj\Debug\" />
+    <Folder Include="Scripts\" />
+    <Folder Include="trainresult\" />
+    <Folder Include="__pycache__\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Web.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

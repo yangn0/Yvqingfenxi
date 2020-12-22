@@ -1,0 +1,23 @@
+[data-pie-id] > *:nth-child(7n+1), [data-bar-id] > *:nth-child(7n+1), [data-line-id] > *:nth-child(7n+1) {
+  color: #3d85f0; }
+[data-pie-id] > *:nth-child(7n+2), [data-bar-id] > *:nth-child(7n+2), [data-line-id] > *:nth-child(7n+2) {
+  color: #ff3333; }
+
+
+#pie, #donut, #bar {
+  height:100%;
+  width:100%}
+
+
+svg {
+  width: 100%;
+  height: auto; }
+
+/* .tooltip { */
+  /* margin-left: -5px; */
+  /* border-radius: 3px; */
+  /* padding: 5px; } */
+
+/* ul[data-pie-id] { */
+  /* list-style: none; */
+  /* padding: 10px; } */
